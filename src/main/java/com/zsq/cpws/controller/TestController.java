@@ -10,8 +10,12 @@ public class TestController {
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     @ResponseBody
-    public String test(){
+    public String test() {
         return "test";
     }
 
+    @RequestMapping(value = "index", method = RequestMethod.GET)
+    public String index() {
+        return "one";
+    }
 }
