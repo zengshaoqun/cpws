@@ -14,8 +14,14 @@ public class TestController {
         return "test";
     }
 
-    @RequestMapping(value = "index", method = RequestMethod.GET)
-    public String index() {
+    @RequestMapping(value = "one", method = RequestMethod.GET)
+    public String one() {
         return "one";
     }
+
+    @RequestMapping(value = "index", method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
+
 }
